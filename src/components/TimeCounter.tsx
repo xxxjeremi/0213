@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import loveConfig from '@/config/loveConfig';
 import styles from './TimeCounter.module.css';
 
 interface TimeLeft {
@@ -20,7 +19,7 @@ export default function TimeCounter() {
 
     const calculateTimeLeft = () => {
       // Parse the relationship start date (Singapore timezone)
-      const startDate = new Date(loveConfig.relationshipStart);
+      const startDate = new Date("2024-03-14T00:00:00+08:00");
       const now = new Date();
       
       // Calculate difference in milliseconds

@@ -2,7 +2,6 @@
 
 import { useState, useRef } from 'react';
 import Image from 'next/image';
-import loveConfig from '@/config/loveConfig';
 import styles from './InviteCard.module.css';
 
 interface InviteCardProps {
@@ -82,7 +81,7 @@ export default function InviteCard({ onPlayAgain }: InviteCardProps) {
       onTouchMove={handleTouchMove}
     >
       <div className={styles.inviteCard}>
-        <h2 className={styles.inviteTitle}>{loveConfig.inviteTitle}</h2>
+        <h2 className={styles.inviteTitle}>Will You Be My Valentine?</h2>
         
         <div className={styles.catRoseContainer}>
           <Image 
@@ -100,7 +99,7 @@ export default function InviteCard({ onPlayAgain }: InviteCardProps) {
             <span className={styles.detailIcon}>📅</span>
             <div>
               <div className={styles.detailLabel}>Date</div>
-              <div className={styles.detailValue}>{loveConfig.inviteDate}</div>
+              <div className={styles.detailValue}>February 13, 2026</div>
             </div>
           </div>
 
@@ -108,7 +107,7 @@ export default function InviteCard({ onPlayAgain }: InviteCardProps) {
             <span className={styles.detailIcon}>🕐</span>
             <div>
               <div className={styles.detailLabel}>Time</div>
-              <div className={styles.detailValue}>{loveConfig.inviteTime}</div>
+              <div className={styles.detailValue}>18:00</div>
             </div>
           </div>
 
@@ -116,12 +115,12 @@ export default function InviteCard({ onPlayAgain }: InviteCardProps) {
             <span className={styles.detailIcon}>📍</span>
             <div>
               <div className={styles.detailLabel}>Location</div>
-              <div className={styles.detailValue}>{loveConfig.inviteLocation}</div>
+              <div className={styles.detailValue}>Gate 10</div>
             </div>
           </div>
         </div>
 
-        <p className={styles.inviteMessage}>{loveConfig.inviteMessage}</p>
+        <p className={styles.inviteMessage}>Хамтдаа гоё үдшийг өнгрүүлцгээе.</p>
 
         <div className={styles.actionButtons}>
           <button 
